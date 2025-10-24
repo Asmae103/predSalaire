@@ -1,30 +1,30 @@
 import React from 'react'
-
+import "./heroo.css"
 const hero = () => {
     const[title, setTitle] = React.useState("Prediction Salaire");
     const[description , setDescription] =React.useState("Outil d’analyse permettant d’estimer les salaires en fonction des informations contenues dans les offres d’emploi. Il met en évidence les tendances du marché et aide à mieux comprendre la relation entre compétences et rémunération.")
   return (
-    <div className =" min-h-[500px] sm:min-h-[700px]  flex justify-center 
-    items-center dark:bg-gray-950 dark:text-white duration-200 relative">
-      {/* background asset div */}
-      {/* <div className ="h-[700px] w-[700px] bg-primary/45 absolute -top-110 right-40 rounded-3xl rotate-45 -z-9">
-      </div> */}
-        <div className="container pb-8 sm:pb-0">
+    <>
+      <div className="header">
+        <div className="header-content">
+        {/* <div className="container pb-8 sm:pb-0"> */}
           <div className="grid grid-cols-1 sm:grid-cols-2">
            {/* text content section*/}
-           <div>
-            <h1 className="text-4xl lg:text-6xl font-bold">
-              {title}
-            </h1>
+            <div>
+              <h1 className="text-4xl lg:text-6xl font-bold">
+                {title}
+              </h1>
               <p classNmae="text-sm">{description}</p>
-            <div> 
-              <button className="bg-gradient-to-r from-primary to-secondary text-whit
-                px-4 py-2 rounded hover:scale-105 duration-200"> 
-                Découvrir nos espaces
-              </button>
-        </div> 
-                <div class="header-illustration">
-                <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
+              <div> 
+              <button className=" hero-btn-primary"> 
+                  Découvrir nos espaces
+                </button>
+              </div> 
+            </div>
+          </div>
+        </div>
+          <div class="header-illustration">
+              <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
                     {/* <!-- Background Circle --> */}
                     <circle cx="250" cy="200" r="180" fill="rgba(255,255,255,0.1)" />
                     
@@ -120,12 +120,13 @@ const hero = () => {
                     </circle>
                 </svg>
             </div>
-           </div>
-          </div>
+          
+       
 
         {/* </div> */}
+        
       
-    </div>
+      
       {/* <section  style={{
     backgroundColor: "var(--color-bg)",
     color: "var(--color-text)",
@@ -145,9 +146,17 @@ const hero = () => {
           Commencer
         </a>
       </div>
-    </section> */}
+     </section> */}
     </div>
-  )
+    </>
+  );
 }
 
 export default hero
+
+ {/* <div className =" min-h-[500px] sm:min-h-[700px]  flex justify-center 
+     items-center dark:bg-gray-950 dark:text-white duration-200 relative"> */}
+      {/* background asset div */}
+      
+      // {/* <div className ="h-[700px] w-[700px] bg-primary/45 absolute -top-110 right-40 rounded-3xl rotate-45 -z-9">
+      // </div> */}
