@@ -14,7 +14,7 @@ const hero = () => {
               <h1 className="text-4xl lg:text-6xl font-bold">
                 {title}
               </h1>
-              <p classNmae="text-sm">{description}</p>
+              <p className="text-sm">{description}</p>
               <div> 
               <button className=" hero-btn-primary"> 
                   Découvrir nos espaces
@@ -23,7 +23,7 @@ const hero = () => {
             </div>
           </div>
         </div>
-          <div class="header-illustration">
+          <div className="header-illustration">
               <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
                     {/* <!-- Background Circle --> */}
                     <circle cx="250" cy="200" r="180" fill="rgba(255,255,255,0.1)" />
@@ -58,9 +58,9 @@ const hero = () => {
                         <animate attributeName="height" values="70;90;70" dur="2s" repeatCount="indefinite" begin="1.2s" />
                         <animate attributeName="y" values="170;150;170" dur="2s" repeatCount="indefinite" begin="1.2s" />
                     </rect>
-                    
+
                     {/* <!-- Trend Line --> */}
-                    <path d="M 140 220 Q 200 180, 260 160 T 360 150" stroke="#F97316" stroke-width="3" fill="none" opacity="0.8">
+                    <path d="M 140 220 Q 200 180, 260 160 T 360 150" stroke="#F97316" strokeWidth="3" fill="none" opacity="0.8">
                         <animate attributeName="d" 
                             values="M 140 220 Q 200 180, 260 160 T 360 150;
                                     M 140 220 Q 200 170, 260 150 T 360 140;
@@ -70,37 +70,37 @@ const hero = () => {
                     
                     {/* <!-- Salary Icons --> */}
                     <g transform="translate(140, 135)">
-                        <text font-size="24" fill="#1E40AF">💰</text>
+                        <text fontSize="24" fill="#1E40AF">💰</text>
                     </g>
                     <g transform="translate(320, 130)">
-                        <text font-size="28" fill="#F97316">📈</text>
+                        <text fontSize="28" fill="#F97316">📈</text>
                     </g>
                     
                     {/* <!-- Floating Elements --> */}
                     <circle cx="420" cy="120" r="15" fill="white" opacity="0.8">
                         <animate attributeName="cy" values="120;110;120" dur="3s" repeatCount="indefinite" />
                     </circle>
-                    <text x="410" y="128" font-size="18">💼</text>
+                    <text x="410" y="128" fontSize="18">💼</text>
                     
                     <circle cx="80" cy="160" r="15" fill="white" opacity="0.8">
                         <animate attributeName="cy" values="160;170;160" dur="3s" repeatCount="indefinite" begin="0.5s" />
                     </circle>
-                    <text x="70" y="168" font-size="18">🎯</text>
+                    <text x="70" y="168" fontSize="18">🎯</text>
                     
                     <circle cx="430" cy="280" r="15" fill="white" opacity="0.8">
                         <animate attributeName="cy" values="280;270;280" dur="3s" repeatCount="indefinite" begin="1s" />
                     </circle>
-                    <text x="420" y="288" font-size="18">🚀</text>
+                    <text x="420" y="288" fontSize="18">🚀</text>
                     
                     <circle cx="70" cy="300" r="15" fill="white" opacity="0.8">
                         <animate attributeName="cy" values="300;310;300" dur="3s" repeatCount="indefinite" begin="1.5s" />
                     </circle>
-                    <text x="60" y="308" font-size="18">💡</text>
+                    <text x="60" y="308" fontSize="18">💡</text>
                     
                     {/* <!-- Person Icon --> */}
                     <circle cx="250" cy="320" r="20" fill="white" opacity="0.9" />
                     <circle cx="250" cy="315" r="8" fill="#1E40AF" />
-                    <path d="M 235 330 Q 250 340, 265 330" fill="#1E40AF" stroke="#1E40AF" stroke-width="2" />
+                    <path d="M 235 330 Q 250 340, 265 330" fill="#1E40AF" stroke="#1E40AF" strokeWidth="2" />
                     
                     {/* <!-- Data Points --> */}
                     <circle cx="155" cy="200" r="4" fill="#F97316">

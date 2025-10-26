@@ -23,7 +23,7 @@ export default function Navbar() {
           </div>
 
           {/* Menu desktop */}
-          <div className=" hidden md:block"> {/* Changement: hidden sur mobile et flex sur desktop */}
+          <div className="hidden md:block"> {/* Changement: hidden sur mobile et flex sur desktop */}
             <ul className="flex items-center gap-6 text-gray-600 dark:text-gray-300">
               {NavbarMenu.map((item) => (
                 <li key={item.id}>
@@ -72,13 +72,12 @@ export default function Navbar() {
           {/* <div className="md:hidden" onClick={() => setOpen(!open)}>
             <MdMenu className="text-4xl" />
           </div> */}
-          <div className="md:hidden z-50" onClick={() => setOpen(!open)}>
+
+          <div className="block md:hidden z-50" onClick={() => setOpen(!open)}>
             <MdMenu className="text-4xl text-gray-800 dark:text-white cursor-pointer" />
           </div>
-
         </div>
       </nav>
-
       {/* Contenu principal décalé pour que le menu fixe ne le recouvre pas */}
     {/*  <div className="pt-24">  Changement: padding-top pour décaler le contenu sous le menu */}
         {/* Ici tu peux mettre ton design / section principale 

@@ -5,11 +5,13 @@
   padding: 0 3px 0 0;
   box-sizing: border-box;
 }
+
 @theme {
   --color-primary: #ff8901;
   --color-secondary: #4a6cf7;
   --color-neutral: #333333;
 }
+
 /* @theme dark {
   --color-primary: #ffb500;
   --color-secondary: #1e40af;
@@ -46,4 +48,13 @@ html[data-theme="dark"] {
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
+}
+
+@media(max-width: 768px){
+  header{
+    grid-template-columns: 1fr;
+    gap: 40px;
+    background-color: #2162e2;
+  }
+
 }
