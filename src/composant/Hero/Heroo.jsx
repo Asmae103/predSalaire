@@ -2,21 +2,21 @@ import React from 'react'
 import "./heroo.css"
 const hero = () => {
     const[title, setTitle] = React.useState("Prediction Salaire");
-    const[description , setDescription] =React.useState("Outil d’analyse permettant d’estimer les salaires en fonction des informations contenues dans les offres d’emploi. Il met en évidence les tendances du marché et aide à mieux comprendre la relation entre compétences et rémunération.")
+    const[description , setDescription] =React.useState("Notre plateforme est un outil d’analyse permettant d’estimer les salaires en fonction des informations contenues dans les offres d’emploi. Elle met en évidence les tendances du marché et aide à mieux comprendre la relation entre compétences et rémunération.")
   return (
     <>
       <div className="header">
         <div className="header-content">
         {/* <div className="container pb-8 sm:pb-0"> */}
-          <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div className="">
            {/* text content section*/}
-            <div>
-              <h1 className="text-4xl lg:text-6xl font-bold">
-                {title}
+            <div >
+              <h1 className="titre  text-6xl lg:text-6xl">{/* text-6xl lg:text-6xl */}
+                <b>{title}</b>
               </h1>
               <p className="text-sm">{description}</p>
-              <div> 
-              <button className=" hero-btn-primary"> 
+              <div className="hero-buttons"> 
+              <button className="hero-btn hero-btn-primary"> 
                   Découvrir nos espaces
                 </button>
               </div> 
@@ -26,7 +26,7 @@ const hero = () => {
           <div className="header-illustration">
               <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
                     {/* <!-- Background Circle --> */}
-                    <circle cx="250" cy="200" r="180" fill="rgba(255,255,255,0.1)" />
+                    <circle cx="250" cy="200" r="180" fill="rgba(30, 64, 175, 0.1)" />
                     
                     {/* <!-- Dashboard Screen --> */}
                     <rect x="120" y="80" width="260" height="180" rx="15" fill="white" opacity="0.95" />
@@ -123,30 +123,7 @@ const hero = () => {
           
        
 
-        {/* </div> */}
-        
-      
-      
-      {/* <section  style={{
-    backgroundColor: "var(--color-bg)",
-    color: "var(--color-text)",
-  }} className=" to-white min-h-screen flex items-center">
-      <div className="container mx-auto px-6 md:px-12 lg:px-24 text-center md:text-left">
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-          {title}
-        </h1>
-        <h3></h3>
-        <p className="text-gray-600 text-lg md:text-xl mb-8">
-          {description}
-        </p>
-        <a
-          href="#prediction-form"
-          className="bg-blue-600 text-white font-medium py-3 px-6 rounded hover:bg-blue-700 transition"
-        >
-          Commencer
-        </a>
-      </div>
-     </section> */}
+   
     </div>
     </>
   );

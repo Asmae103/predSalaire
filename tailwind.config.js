@@ -4,11 +4,11 @@ module.exports = {
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  darkMode: 'class', // important
+  darkMode: 'className', // important
   theme: {
     extend: {
       colors: {
-        // primary: "#4a6cf7",
+        // primary: "#f7724aff",
         // neutral: "#333333",
         // darkBg: "#0b1020",
         // lightBg: "#ffffff",
@@ -23,7 +23,7 @@ module.exports = {
 
 // /** @type {import('tailwindcss').Config} */
 // module.exports = {
-//   darkMode: 'class', // <-- active le mode sombre via la classe "dark"
+//   darkMode: '', // <-- active le mode sombre via la classe "dark"
 //   theme: {
 //     extend: {
 //       colors: {

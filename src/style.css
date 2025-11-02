@@ -11,6 +11,11 @@
   --color-secondary: #4a6cf7;
   --color-neutral: #333333;
 }
+@theme {
+  --font-family: {
+    playFair: "playfair, Display", "serif",
+  }
+}
 
 /* @theme dark {
   --color-primary: #ffb500;
@@ -50,11 +55,11 @@ body {
   color: var(--color-text);
 }
 
-@media(max-width: 768px){
+/* @media(max-width: 768px){
   header{
     grid-template-columns: 1fr;
     gap: 40px;
-    background-color: #2162e2;
+   
   }
 
-}
+} */

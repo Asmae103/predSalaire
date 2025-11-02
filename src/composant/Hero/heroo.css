@@ -1,13 +1,38 @@
+
+*{
+     --accent-orange-light: #FB923C;
+     --accent-orange: #F97316;
+     --accent-blue: #1E40AF;
+     --bg-gradient-start: #EFF6FF;
+     --bg-gradient-end: #DBEAFE;
+     /* --text-primary: #1e293b; */
+     
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    /* font-family: "Comic Sans MS", cursive, sans-serif; */
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: background 0.3s ease, color 0.3s ease;
+    color: var(--text-primary)
+}
 .header{
     color: rgb(0, 0, 0);
-    padding:80px 20px 60px;
+    padding: 40px 20px 40px;
     animation: fadeInDown 0.8s ease-out; 
+    /* display: flex; */
     display: grid;
+    justify-content: space-between;
     grid-template-columns: 1fr 1fr ;
     gap:60px;
     align-items:center;
-    max-width: 1400px;
-    margin: 0 auto;
+    max-width: 1500px;
+    border-radius: 20px;
+    margin: 2rem auto;
+    background: linear-gradient(135deg, var(--bg-gradient-start)0%, var(--bg-gradient-end) 100%);
+     /* min-height: 100vh; */
+
 }
 
 @keyframes fadeInDown {
@@ -22,14 +47,43 @@
 }
 
 .header-content{
-    text-align:left;
-   
+    text-align: left;
+    padding-left: 40px;
+    
+}
+.titre{
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: var(--accent-blue);
+    white-space: nowrap;  /*empeche le retour a la ligne  */
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+
 }
 
 .header-illustration{
     display:flex;
     justify-content: center;
     align-items: center;
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+
+.hero-btn{
+    padding: 18px 40px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .hero-btn-primary {
