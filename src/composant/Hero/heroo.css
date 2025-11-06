@@ -3,10 +3,16 @@
      --accent-orange-light: #FB923C;
      --accent-orange: #F97316;
      --accent-blue: #1E40AF;
+     --accent-blue-light: #3B82F6;
      --bg-gradient-start: #EFF6FF;
      --bg-gradient-end: #DBEAFE;
-     /* --text-primary: #1e293b; */
-     
+     --bg-secondary: #f8fafc;
+     --text-primaryy: #1e293b; 
+     --text-secondary: #64748b;
+     --carte-bg:#ffffff;
+     --shadow: rgba(0, 0, 0, 0.1);
+     --border-color: #e2e8f0;
+     --caracteristique-bg: #f8fafc;
 }
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -15,7 +21,7 @@ body{
     overflow-x: hidden;
     padding-top: 80px;
     transition: background 0.3s ease, color 0.3s ease;
-    color: var(--text-primary)
+    color: var(--text-primaryy)
 }
 .header{
     color: rgb(0, 0, 0);
@@ -89,8 +95,208 @@ body{
 .hero-btn-primary {
             background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-light) 100%);
             color: white;
-        }
-/* .hero-btn-primary:hover{
+}
+.hero-btn-primary:hover{
     transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(249, 115,22, 0.4).
-} */
+    box-shadow: 0 10px 30px rgba(249, 115,22, 0.4);
+}
+.section-title{
+    text-align: center;
+    margin: 2.5rem;
+    font-size: 2.5em;
+    color: var(--text-primaryy)
+}
+
+.cards-cantainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    animation: fadeInUp 1s ease-out;    
+}
+
+.carte{
+    background: var(--carte-bg);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.carte::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--accent-blue), var(--accent-blue-light));
+}
+
+.carte:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 30px 80px var(--shadow);
+}
+
+
+
+.card-header{
+    display:flex;
+    align-items: center;
+    /* margin: ; */
+}
+h2 {
+    color: var(--text-primaryy);
+    font-size: 2em;
+}
+
+.label{
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    text-transform: uppercase; /* ecriture majuscule*/
+    letter-spacing: 1px;
+}
+
+.icon{
+    width:60px;
+    height: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.candidat-icon{
+  background: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light) 100%);
+}
+
+.recruteur-icon {
+  background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-light) 100%);
+}
+
+.caracteristique{
+    margin: 30px 0;
+}
+
+.caract-item{
+    display:flax;
+    align-items: start;
+    margin-bottom: 20px; 
+    padding: 15px;
+    background: var(--caracteristique-bg);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.caract-item:hover{
+    background: var(--bg-secondary)
+}
+
+.caract-icon{
+    color: var(--accent-blue);
+    font-size: 24px;
+    margin-right: 15px;
+    margin-top: 2px;
+}
+
+.caract-text h3{
+    color: var(--text-primaryy);
+    font-size: 1.1em;
+    margin-bottom:5px;
+}
+
+.caract-text p{
+    color: var(--text-secondary);
+    font-size: 0.95em;
+    line-height:  1.5;
+}
+
+.caract-btn{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background:linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-blue-light)100%);
+    color: white;
+    /* border: none; */
+    border-radius: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px
+}
+
+.caract-btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.4);
+}
+
+.recruteur-carte .caract-btn{
+    background: linear-gradient(135deg, var(--accent-orange)0%, var(--accent-orange-light)100%);
+}
+
+.recruteur-carte .caract-btn{
+    box-shadow: 0 10px 30px rgba(249, 115, 22, 0.4);
+}
+
+.section-fonctionnalite{
+    padding: 50px;
+    background: var(--carte-bg);
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0 20px 60px var(--shadow);
+    border: 1px solid var(--border-color);
+    transition: background 0.3s ease;
+}
+
+.section-fonctionnalite h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    color: var(--text-primaryy);
+}
+
+.fonct-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:30px;
+
+}
+
+.fonct-item{
+    text-align: center;
+    padding: 30px;
+    border-radius: 15px;
+    background: var(--feature-bg);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.fonct-item::hover{
+    transform: scale(1.05);
+    background: var(--bg-secondary);
+}
+
+.fonct-item h3{
+    color: var(--accent-blue);
+    margin: 20px 0 10px;
+    font-size: 1.3em;
+}
+
+.fonct-item p{
+    color: var(--text-secondary);
+    line-height: 1.6;
+
+}
+
+.fonct-icon {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+

@@ -1,11 +1,14 @@
 import React from 'react'
 import "./heroo.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";  //pour les icons
+import { faUserTie } from "@fortawesome/free-solid-svg-icons";   //icons de candidat
 const hero = () => {
     const[title, setTitle] = React.useState("Prediction Salaire");
     const[description , setDescription] =React.useState("Notre plateforme est un outil d’analyse permettant d’estimer les salaires en fonction des informations contenues dans les offres d’emploi. Elle met en évidence les tendances du marché et aide à mieux comprendre la relation entre compétences et rémunération.")
   return (
     <>
       <div className="header">
+        {/* Partie contenu */}
         <div className="header-content">
         {/* <div className="container pb-8 sm:pb-0"> */}
           <div className="">
@@ -23,7 +26,8 @@ const hero = () => {
             </div>
           </div>
         </div>
-          <div className="header-illustration">
+        {/* Partie illustration */}
+        <div className="header-illustration">
               <svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org/2000/svg">
                     {/* <!-- Background Circle --> */}
                     <circle cx="250" cy="200" r="180" fill="rgba(30, 64, 175, 0.1)" />
@@ -119,12 +123,211 @@ const hero = () => {
                         <animate attributeName="r" values="4;6;4" dur="2s" repeatCount="indefinite" begin="1.2s" />
                     </circle>
                 </svg>
+        </div>
+      </div>
+      <h2 className='section-title'><b>Choisissez votre espace</b></h2>
+      <div className='cards-cantainer'>
+        {/* Partie Candidat */}
+        <div className='carte candidat-carte'>
+          <div className='card-header'>
+            <div className='icon candidat-icon'>
+              <FontAwesomeIcon icon={faUserTie} />
             </div>
-          
+            
+            <div>
+              <p className='label'>Espace</p>
+              <h2>Candidat</h2>
+            </div>
+          </div>
+          <div className="caracteristique">
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  💰
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Estimation Salariale Instantanée
+                </h3>
+                <p>
+                  Collez une offre d'emploi et obtenez une prédiction précise du salaire attendu basée sur l'IA
+                </p>
+              </div>
+            </div>
+
+
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  🚀
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Compétences à Forte Valeur
+                </h3>
+                <p>
+                  Identifiez les compétences qui augmentent le plus votre potentiel salarial
+                </p>
+              </div>
+            </div>
+
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  💡
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Recommandations Personaalisées
+                </h3>
+                <p>
+                  Recevez des conseils sur les compétences à développer
+                </p>
+              </div>
+            </div>
+            
+
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  📊
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Analyse de Tendances
+                </h3>
+                <p>
+                  Visualisez l'évolution des salaires dans votre région
+                </p>
+              </div>
+            </div>
+
+            <button className='caract-btn'> 
+              Accéder à Mon Espace
+            </button>
+          </div>
+        </div>
+        
+        {/* Partie Recruteur */}
+        <div className='carte recruteur-carte'>
+          <div className='card-header'>
+            <div className='icon recruteur-icon'>
+              🏢
+            </div>
+            
+            <div>
+              <p className='label'>Espace</p>
+              <h2>Recruteur</h2>
+            </div>
+          </div>
+          <div className="caracteristique">
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  📈
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Benchmarking Salarial
+                </h3>
+                <p>
+                  Comparez vos offres avec le marché en temps réel pour rester compétitif
+                </p>
+              </div>
+            </div>
+
+
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  💎
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Détection de Compétences Rares
+                </h3>
+                <p>
+                  Identifiez les compétences les plus demandées et les mieux rémunérées 
+                </p>
+              </div>
+            </div>
+
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  🎯
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Évaluation d'Attractivité
+                </h3>
+                <p>
+                  Analysez si vos annonces sont suffisamment compéitives pour attire les talents 
+                </p>
+              </div>
+            </div>
+            
+
+            <div className='caract-item'>
+              <div className='caract-icon'>
+                  🗺️
+              </div>
+              <div className='caract-text'>
+                <h3>
+                  Tableaux de Bord Géographiques
+                </h3>
+                <p>
+                  Visualisez les écarts salariaux par région et optimisez votre stratégie RH
+                </p>
+              </div>
+            </div>
+
+            <button className='caract-btn'> 
+              Accéder à Mon Espace 
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* Section Fonctionnalités Principales */}
+      <div className="section-fonctionnalite">
+        <h2>
+          <b>Fonctionnalités Principales</b>
+        </h2>
+        <div className="fonct-grid">
+          <div className='fonct-item'>
+            <div className='fonct-icon'>
+             🤖
+            </div>
+            <h3>
+             Prédiction IA
+            </h3>
+            <p>
+             Modèle d'intelligence artificielle entrainé sur de milliers d'offres d'emploi pour des prédictions salariales ultra-précises
+            </p>
+          </div>
        
 
-   
-    </div>
+          <div className='fonct-item'>
+            <div className='fonct-icon'>
+             📊
+            </div>
+            <h3>
+             Dashboards Interactifs
+            </h3>
+            <p>
+             Cartes géographiques, analyses des compétences et comparaisons d'offres en temps réel 
+            </p>
+          </div>
+       
+
+          <div className='fonct-item'>
+            <div className='fonct-icon'>
+             🔍
+            </div>
+            <h3>
+             Analyses Avancées
+            </h3>
+            <p>
+             Détection d'inégalités et tendances du marché
+            </p>
+          </div>
+        
+        </div>
+      </div>
+
     </>
   );
 }
