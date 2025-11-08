@@ -328,6 +328,52 @@ const hero = () => {
         </div>
       </div>
 
+      {/* footer */}
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3><b>SalaryPredict</b> </h3>
+            <p>La plateforme d'intelligence salariale qui révolutionne le recrutement et la recherche d'emploi grâce à l'IA.</p>
+           
+          </div>
+
+          <div class="footer-section">
+            <h3><b>Navigation</b></h3>
+            <ul class="footer-links">
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#espaces">Nos Espaces</a></li>
+              <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+              <li><a href="#tarifs">Tarifs</a></li>
+              <li><a href="#a-propos">À propos</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3><b>Ressources</b></h3>
+            <ul class="footer-links">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Tutoriels</a></li>
+              <li><a href="#">Centre d'aide</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3><b>Newsletter</b></h3>
+            <p>Restez informé des dernières tendances salariales et nouveautés.</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Inscription réussie !');">
+              <input type="email" placeholder="Votre email" required/>
+              <button type="submit">S'inscrire</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 SalaryPredict. Tous droits réservés. | <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a> | <a href="#">CGU</a></p>
+        </div>
+      </footer>
+
     </>
   );
 }

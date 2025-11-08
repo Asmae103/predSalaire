@@ -2,7 +2,7 @@ export const NavbarMenu = [
     {
         id:1,
         title: "Accueil",
-        link:"#",
+        link:"/accueil",
     },
     {
         id:2,
@@ -11,8 +11,8 @@ export const NavbarMenu = [
     },
     {
         id:3,
-        title: "Candidat",
-        link:"#",
+        title: "Espace",
+        link:"/espace",
     },
     {
         id:4,

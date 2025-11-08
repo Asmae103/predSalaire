@@ -5,6 +5,7 @@ import { MdMenu } from "react-icons/md";
 import { FaDumbbell } from "react-icons/fa";
 import ResponsiveMenu from "./ResponsiveMenu";
 import Darkmode from "./Darkmode";
+// import Espace from "./Espace/Espace.jsx";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
